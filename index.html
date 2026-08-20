@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>蔡定軒 Tsai Ding Hsuan｜內容企劃・影像企劃</title>
-<meta name="description" content="短影音內容企劃。經營品牌形象。元禾汽車 13k→30k、鑑星閣 3k→12k，單支最高 53 萬觀看。">
+<meta name="description" id="metadesc" content="短影音內容企劃。經營品牌形象。">
 <meta property="og:title" content="蔡定軒 Tsai Ding Hsuan｜內容企劃・影像企劃">
-<meta property="og:description" content="經營品牌形象。兩個品牌帳號 13k→30k、3k→12k，單支最高 53 萬觀看。">
+<meta property="og:description" id="ogdesc" content="短影音內容企劃。經營品牌形象。">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,8 +28,8 @@ nav.solid{background:rgba(10,10,10,.88);backdrop-filter:blur(14px);border-bottom
 nav .inner{max-width:var(--max);margin:0 auto;padding:20px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .brand{font-family:"Cormorant Garamond",serif;font-size:19px;letter-spacing:.18em;text-decoration:none;color:var(--ink);white-space:nowrap}
 .brand b{color:var(--accent);font-weight:400}
-.navlinks{display:flex;gap:30px;list-style:none}
-.navlinks a{color:var(--ink-dim);text-decoration:none;font-size:13px;letter-spacing:.12em;padding-bottom:3px;border-bottom:1px solid transparent;transition:color .25s,border-color .25s}
+.navlinks{display:flex;gap:23px;list-style:none}
+.navlinks a{color:var(--ink-dim);text-decoration:none;font-size:13px;letter-spacing:.1em;padding-bottom:3px;border-bottom:1px solid transparent;transition:color .25s,border-color .25s;white-space:nowrap}
 .navlinks a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .navtoggle{display:none;background:none;border:0;color:var(--ink);font-size:22px;cursor:pointer;line-height:1}
 
@@ -57,7 +57,7 @@ section.alt{background:var(--bg-soft)}
 .sec-num{font-family:"Cormorant Garamond",serif;font-size:13px;letter-spacing:.3em;color:var(--accent);display:block;margin-bottom:14px}
 h2{font-family:"Noto Serif TC",serif;font-weight:500;font-size:clamp(1.7rem,4vw,2.6rem);letter-spacing:.1em;line-height:1.35}
 h2::after{content:"";display:block;width:46px;height:2px;background:var(--accent);margin-top:22px}
-.rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .85s cubic-bezier(.2,.7,.2,1),transform .85s cubic-bezier(.2,.7,.2,1)}
 .rv.in{opacity:1;transform:none}
 
 .about-grid{display:grid;grid-template-columns:1.35fr .95fr;gap:64px;align-items:start}
@@ -71,6 +71,23 @@ h2::after{content:"";display:block;width:46px;height:2px;background:var(--accent
 .stat{background:var(--bg);padding:34px 26px}
 .stat .n{font-family:"Cormorant Garamond",serif;font-size:clamp(1.8rem,4vw,2.7rem);color:var(--accent);line-height:1}
 .stat .l{font-size:11.5px;letter-spacing:.14em;color:var(--ink-faint);margin-top:12px;line-height:1.7;white-space:pre-line}
+
+/* ===== 代表作品（可直接播放） ===== */
+.reel-intro{color:var(--ink-dim);font-size:14.5px;margin:-20px 0 42px;max-width:660px}
+.reels{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.reel{border:1px solid var(--line);background:var(--bg);display:flex;flex-direction:column;transition:border-color .35s,transform .35s}
+.reel:hover{border-color:var(--accent);transform:translateY(-4px)}
+.reel-frame{position:relative;width:100%;aspect-ratio:9/16;max-height:680px;background:#000;overflow:hidden}
+.reel-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+.reel-frame .noembed{position:absolute;inset:0;display:grid;place-items:center;color:var(--ink-faint);font-size:12px;letter-spacing:.14em}
+.reel-info{padding:22px 24px 26px;display:flex;flex-direction:column;flex:1}
+.reel-plat{font-size:10.5px;letter-spacing:.2em;color:var(--accent);margin-bottom:10px}
+.reel-info h3{font-family:"Noto Serif TC",serif;font-size:16.5px;font-weight:500;letter-spacing:.05em;line-height:1.6;margin-bottom:14px}
+.reel-views{font-family:"Cormorant Garamond",serif;font-size:25px;color:var(--accent);letter-spacing:.06em;line-height:1}
+.reel-views i{font-style:normal;font-family:"Noto Sans TC",sans-serif;font-size:11px;letter-spacing:.16em;color:var(--ink-faint);margin-left:9px}
+.reel-note{font-size:12.5px;color:var(--ink-dim);line-height:1.8;margin:14px 0 22px}
+.reel-go{margin-top:auto;align-self:flex-start;text-decoration:none;font-size:11.5px;letter-spacing:.14em;color:var(--ink);border-bottom:1px solid var(--accent);padding-bottom:3px;transition:color .25s}
+.reel-go:hover{color:var(--accent)}
 
 .skills{border-top:1px solid var(--line)}
 .skill{display:grid;grid-template-columns:230px 1fr;gap:40px;padding:30px 0;border-bottom:1px solid var(--line);align-items:baseline}
@@ -131,12 +148,15 @@ footer p{font-size:11px;letter-spacing:.18em;color:var(--ink-faint)}
 #loaderr{display:none;padding:100px 28px;text-align:center;color:var(--ink-dim)}
 #loaderr code{color:var(--accent);font-size:13px}
 
+@media (max-width:1100px){.reels{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:1040px){.navlinks{gap:17px}.navlinks a{font-size:12px;letter-spacing:.06em}}
 @media (max-width:880px){
   .navlinks{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:rgba(10,10,10,.97);border-bottom:1px solid var(--line);padding:8px 0}
   .navlinks.open{display:flex}
-  .navlinks a{display:block;padding:15px 28px;border:0}
+  .navlinks a{display:block;padding:15px 28px;border:0;font-size:13px;letter-spacing:.1em}
   .navtoggle{display:block}
   section{padding:84px 0}
+  .wrap-reels{padding:0 14px}
   .about-grid{grid-template-columns:1fr;gap:40px}
   .about-photo{max-width:340px}
   .stats{grid-template-columns:repeat(2,1fr)}
@@ -146,6 +166,7 @@ footer p{font-size:11px;letter-spacing:.18em;color:var(--ink-faint)}
   .gal a:nth-child(1),.gal a:nth-child(6){grid-column:span 2}
   .contact{padding:92px 0}
 }
+@media (max-width:780px){.reels{grid-template-columns:1fr;max-width:400px;margin:0 auto;gap:22px}}
 @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 </style>
 </head>
@@ -157,9 +178,10 @@ footer p{font-size:11px;letter-spacing:.18em;color:var(--ink-faint)}
     <button class="navtoggle" id="navtoggle" aria-label="選單">☰</button>
     <ul class="navlinks" id="navlinks">
       <li><a href="#about">關於</a></li>
+      <li><a href="#reel">代表作品</a></li>
       <li><a href="#skills">專業技能</a></li>
       <li><a href="#exp">工作經歷</a></li>
-      <li><a href="#work">作品</a></li>
+      <li><a href="#work">頻道成績</a></li>
       <li><a href="#set">拍攝現場</a></li>
       <li><a href="#contact">聯絡</a></li>
     </ul>
@@ -177,10 +199,29 @@ footer p{font-size:11px;letter-spacing:.18em;color:var(--ink-faint)}
 /* ============ 讀 content.json 並渲染 ============ */
 var esc = function(s){ return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); };
 
+/* 把一般的分享連結自動轉成可嵌入播放的網址。
+   支援 TikTok 影片、YouTube（含 Shorts）、Instagram（Reels／貼文）。 */
+function toEmbed(u){
+  u = String(u||''); var m;
+  if((m = u.match(/tiktok\.com\/(?:@[^/?#]+\/)?(?:video|photo)\/(\d+)/)))
+    return 'https://www.tiktok.com/embed/v2/' + m[1];
+  if((m = u.match(/(?:youtube\.com\/(?:shorts\/|embed\/|live\/|watch\?(?:.*&)?v=)|youtu\.be\/)([A-Za-z0-9_-]{6,})/)))
+    return 'https://www.youtube.com/embed/' + m[1];
+  if((m = u.match(/instagram\.com\/(reel|reels|p|tv)\/([A-Za-z0-9_-]+)/)))
+    return 'https://www.instagram.com/' + (m[1]==='reels'?'reel':m[1]) + '/' + m[2] + '/embed/';
+  return '';
+}
+
 function render(D){
-  var s=D.site||{}, h=D.hero||{}, a=D.about||{}, k=D.skills||{}, e=D.experience||{}, w=D.work||{}, o=D.onset||{}, c=D.contact||{};
+  var s=D.site||{}, h=D.hero||{}, a=D.about||{}, r=D.reel||{}, k=D.skills||{},
+      e=D.experience||{}, w=D.work||{}, o=D.onset||{}, c=D.contact||{};
 
   if(s.title){ document.title=s.title; }
+  if(s.description){
+    var md=document.getElementById('metadesc'), od=document.getElementById('ogdesc');
+    if(md) md.setAttribute('content', s.description);
+    if(od) od.setAttribute('content', s.description);
+  }
   if(s.accent){ document.documentElement.style.setProperty('--accent', s.accent); }
   document.getElementById('brand').innerHTML = esc(s.brand_a||'')+' <b>'+esc(s.brand_b||'')+'</b>';
 
@@ -212,8 +253,32 @@ function render(D){
    + '<div class="stats rv">'+(a.stats||[]).map(function(t){return '<div class="stat"><div class="n">'+esc(t.num)+'</div><div class="l">'+esc(t.label)+'</div></div>';}).join('')+'</div>'
    + '</div></section>';
 
+  /* 代表作品（影片可直接播放） */
+  if((r.items||[]).length){
+    H+='<section id="reel" class="alt"><div class="wrap wrap-reels">'
+     + '<div class="sec-head rv"><span class="sec-num">'+esc(r.num)+'</span><h2>'+esc(r.heading)+'</h2></div>'
+     + (r.intro?'<p class="reel-intro rv">'+esc(r.intro)+'</p>':'')
+     + '<div class="reels">'+r.items.map(function(v){
+         var em = v.embed || toEmbed(v.url);
+         return '<article class="reel rv">'
+          + '<div class="reel-frame">'
+          +   (em
+               ? '<iframe src="'+esc(em)+'" loading="lazy" title="'+esc(v.title)+'" scrolling="no" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; fullscreen"></iframe>'
+               : '<div class="noembed">連結無法嵌入播放</div>')
+          + '</div>'
+          + '<div class="reel-info">'
+          +   '<div class="reel-plat">'+esc(v.platform)+'</div>'
+          +   '<h3>'+esc(v.title)+'</h3>'
+          +   (v.views?'<div class="reel-views">'+esc(v.views)+'<i>'+esc(v.views_label||'觀看')+'</i></div>':'')
+          +   (v.note?'<p class="reel-note">'+esc(v.note)+'</p>':'')
+          +   (v.url?'<a class="reel-go" href="'+esc(v.url)+'" target="_blank" rel="noopener">'+esc(v.link_text||'開新視窗觀看 →')+'</a>':'')
+          + '</div></article>';
+       }).join('')+'</div>'
+     + '</div></section>';
+  }
+
   /* SKILLS */
-  H+='<section id="skills" class="alt"><div class="wrap">'
+  H+='<section id="skills"><div class="wrap">'
    + '<div class="sec-head rv"><span class="sec-num">'+esc(k.num)+'</span><h2>'+esc(k.heading)+'</h2></div>'
    + '<div class="skills">'+(k.items||[]).map(function(i){
        return '<div class="skill rv"><h3>'+esc(i.name)+'<em>'+esc(i.en)+'</em></h3><p>'+esc(i.desc)+'</p></div>';
@@ -221,7 +286,7 @@ function render(D){
    + '</div></section>';
 
   /* EXPERIENCE */
-  H+='<section id="exp"><div class="wrap">'
+  H+='<section id="exp" class="alt"><div class="wrap">'
    + '<div class="sec-head rv"><span class="sec-num">'+esc(e.num)+'</span><h2>'+esc(e.heading)+'</h2></div>'
    + '<div class="tl">'+(e.jobs||[]).map(function(j){
        var b='<article class="job rv">'
@@ -241,8 +306,8 @@ function render(D){
      }).join('')+'</div>'
    + '</div></section>';
 
-  /* WORK */
-  H+='<section id="work" class="alt"><div class="wrap">'
+  /* WORK（頻道成績） */
+  H+='<section id="work"><div class="wrap">'
    + '<div class="sec-head rv"><span class="sec-num">'+esc(w.num)+'</span><h2>'+esc(w.heading)+'</h2></div>'
    + '<div class="cards">'+(w.cards||[]).map(function(cd){
        return '<article class="card rv">'
@@ -258,7 +323,7 @@ function render(D){
    + '</div></section>';
 
   /* ON SET */
-  H+='<section id="set"><div class="wrap">'
+  H+='<section id="set" class="alt"><div class="wrap">'
    + '<div class="sec-head rv"><span class="sec-num">'+esc(o.num)+'</span><h2>'+esc(o.heading)+'</h2></div>'
    + '<div class="gal rv">'+(o.photos||[]).map(function(p){
        return '<a href="'+esc(p)+'" target="_blank"><img src="'+esc(p)+'" alt="拍攝現場"></a>';
@@ -266,7 +331,7 @@ function render(D){
    + '</div></section>';
 
   /* CONTACT */
-  H+='<section id="contact" class="alt"><div class="wrap contact">'
+  H+='<section id="contact"><div class="wrap contact">'
    + '<p class="big rv">'+esc(c.headline)+'</p>'
    + '<a class="mail rv" href="mailto:'+esc(c.email)+'">'+esc(c.email)+'</a>'
    + '<div class="social rv">'+(c.links||[]).map(function(l){
@@ -284,9 +349,18 @@ function boot(){
   function onScroll(){ nav.classList.toggle('solid', window.scrollY>60); }
   onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
 
+  /* 進場／退場都有動畫：
+     往下捲 → 元素進入畫面時浮現；
+     往上捲 → 元素落到畫面下方時收回（已經看過、在上方的內容不會消失）。 */
   var io=new IntersectionObserver(function(es){
-    es.forEach(function(x){ if(x.isIntersecting){ x.target.classList.add('in'); io.unobserve(x.target); } });
-  },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    es.forEach(function(x){
+      if(x.isIntersecting){
+        x.target.classList.add('in');
+      }else if(x.boundingClientRect.top > 0){
+        x.target.classList.remove('in');
+      }
+    });
+  },{threshold:0,rootMargin:'0px 0px -12% 0px'});
   document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
 
   var hb=document.querySelector('.hero-bg');
