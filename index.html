@@ -37,6 +37,12 @@ header.hero{position:relative;min-height:100svh;display:flex;align-items:center;
 .hero-bg{position:absolute;inset:0;background-position:center 38%;background-size:cover;background-repeat:no-repeat;transform:scale(1.06);filter:grayscale(.35) contrast(1.05) brightness(.62)}
 .hero-bg::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 30% 45%,rgba(10,10,10,.25) 0%,rgba(10,10,10,.82) 62%,#0a0a0a 100%),linear-gradient(to bottom,rgba(10,10,10,.7) 0%,rgba(10,10,10,.15) 40%,rgba(10,10,10,.95) 100%)}
 .hero-inner{position:relative;z-index:2;width:100%;max-width:var(--max);margin:0 auto;padding:0 28px}
+.hero-portrait{
+  width:clamp(94px,11vw,134px);aspect-ratio:1;border-radius:50%;overflow:hidden;
+  margin-bottom:28px;border:1px solid rgba(255,111,77,.6);
+  box-shadow:0 0 0 7px rgba(10,10,10,.5),0 16px 44px rgba(0,0,0,.65)
+}
+.hero-portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 24%;filter:grayscale(.12) contrast(1.04) brightness(1.02);display:block}
 .eyebrow{font-size:11px;letter-spacing:.42em;color:var(--accent);margin-bottom:26px;text-transform:uppercase}
 h1.name{font-family:"Noto Serif TC",serif;font-weight:500;font-size:clamp(3.2rem,10vw,7rem);line-height:1.02;letter-spacing:.06em;margin-bottom:8px}
 .name-en{font-family:"Cormorant Garamond",serif;font-weight:300;font-size:clamp(1.3rem,3.4vw,2.4rem);letter-spacing:.3em;color:var(--accent);margin-bottom:40px}
@@ -184,6 +190,7 @@ function render(D){
   H+='<header class="hero" id="top">'
    + '<div class="hero-bg" style="background-image:url(\''+esc(h.bg_image)+'\')"></div>'
    + '<div class="hero-inner">'
+   +   (h.portrait ? '<div class="hero-portrait"><img src="'+esc(h.portrait)+'" alt="'+esc(h.name_zh)+'"></div>' : '')
    +   '<div class="eyebrow">'+esc(h.eyebrow)+'</div>'
    +   '<h1 class="name">'+esc(h.name_zh)+'</h1>'
    +   '<div class="name-en">'+esc(h.name_en)+'</div>'
