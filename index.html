@@ -72,22 +72,21 @@ h2::after{content:"";display:block;width:46px;height:2px;background:var(--accent
 .stat .n{font-family:"Cormorant Garamond",serif;font-size:clamp(1.8rem,4vw,2.7rem);color:var(--accent);line-height:1}
 .stat .l{font-size:11.5px;letter-spacing:.14em;color:var(--ink-faint);margin-top:12px;line-height:1.7;white-space:pre-line}
 
-/* ===== 代表作品（可直接播放） ===== */
-.reel-intro{color:var(--ink-dim);font-size:14.5px;margin:-20px 0 42px;max-width:660px}
-.reels{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-.reel{border:1px solid var(--line);background:var(--bg);display:flex;flex-direction:column;transition:border-color .35s,transform .35s}
-.reel:hover{border-color:var(--accent);transform:translateY(-4px)}
-.reel-frame{position:relative;width:100%;aspect-ratio:9/16;max-height:680px;background:#000;overflow:hidden}
-.reel-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
-.reel-frame .noembed{position:absolute;inset:0;display:grid;place-items:center;color:var(--ink-faint);font-size:12px;letter-spacing:.14em}
-.reel-info{padding:22px 24px 26px;display:flex;flex-direction:column;flex:1}
-.reel-plat{font-size:10.5px;letter-spacing:.2em;color:var(--accent);margin-bottom:10px}
-.reel-info h3{font-family:"Noto Serif TC",serif;font-size:16.5px;font-weight:500;letter-spacing:.05em;line-height:1.6;margin-bottom:14px}
-.reel-views{font-family:"Cormorant Garamond",serif;font-size:25px;color:var(--accent);letter-spacing:.06em;line-height:1}
-.reel-views i{font-style:normal;font-family:"Noto Sans TC",sans-serif;font-size:11px;letter-spacing:.16em;color:var(--ink-faint);margin-left:9px}
-.reel-note{font-size:12.5px;color:var(--ink-dim);line-height:1.8;margin:14px 0 22px}
-.reel-go{margin-top:auto;align-self:flex-start;text-decoration:none;font-size:11.5px;letter-spacing:.14em;color:var(--ink);border-bottom:1px solid var(--accent);padding-bottom:3px;transition:color .25s}
-.reel-go:hover{color:var(--accent)}
+/* ===== 代表作品（純文字連結清單） ===== */
+.reel-intro{color:var(--ink-dim);font-size:14.5px;margin:-20px 0 40px;max-width:660px}
+.reels{border-top:1px solid var(--line)}
+a.reel{display:grid;grid-template-columns:118px 1fr auto;gap:0 30px;align-items:baseline;
+  padding:26px 10px;border-bottom:1px solid var(--line);text-decoration:none;color:inherit;
+  transition:background .32s}
+a.reel:hover{background:rgba(255,111,77,.055)}
+.reel-views{font-family:"Cormorant Garamond",serif;font-size:26px;color:var(--accent);letter-spacing:.05em;line-height:1.15;white-space:nowrap}
+.reel-views i{font-style:normal;font-family:"Noto Sans TC",sans-serif;font-size:10.5px;letter-spacing:.14em;color:var(--ink-faint);margin-left:7px}
+.reel-plat{font-size:10.5px;letter-spacing:.2em;color:var(--ink-faint);margin-bottom:7px}
+.reel-main h3{font-family:"Noto Serif TC",serif;font-size:17.5px;font-weight:500;letter-spacing:.05em;line-height:1.55;transition:color .25s}
+a.reel:hover .reel-main h3{color:var(--accent)}
+.reel-note{font-size:13px;color:var(--ink-dim);line-height:1.85;margin-top:11px;max-width:60ch}
+.reel-go{font-size:11.5px;letter-spacing:.14em;color:var(--ink-faint);white-space:nowrap;transition:color .25s,transform .25s}
+a.reel:hover .reel-go{color:var(--accent);transform:translateX(5px)}
 
 .skills{border-top:1px solid var(--line)}
 .skill{display:grid;grid-template-columns:230px 1fr;gap:40px;padding:30px 0;border-bottom:1px solid var(--line);align-items:baseline}
@@ -148,7 +147,6 @@ footer p{font-size:11px;letter-spacing:.18em;color:var(--ink-faint)}
 #loaderr{display:none;padding:100px 28px;text-align:center;color:var(--ink-dim)}
 #loaderr code{color:var(--accent);font-size:13px}
 
-@media (max-width:1100px){.reels{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:1040px){.navlinks{gap:17px}.navlinks a{font-size:12px;letter-spacing:.06em}}
 @media (max-width:880px){
   .navlinks{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:rgba(10,10,10,.97);border-bottom:1px solid var(--line);padding:8px 0}
@@ -156,7 +154,10 @@ footer p{font-size:11px;letter-spacing:.18em;color:var(--ink-faint)}
   .navlinks a{display:block;padding:15px 28px;border:0;font-size:13px;letter-spacing:.1em}
   .navtoggle{display:block}
   section{padding:84px 0}
-  .wrap-reels{padding:0 14px}
+  a.reel{grid-template-columns:1fr;gap:0;padding:24px 4px}
+  a.reel .reel-views{order:-1;font-size:23px;margin-bottom:9px}
+  a.reel .reel-go{margin-top:16px}
+  a.reel:hover .reel-go{transform:none}
   .about-grid{grid-template-columns:1fr;gap:40px}
   .about-photo{max-width:340px}
   .stats{grid-template-columns:repeat(2,1fr)}
@@ -166,7 +167,6 @@ footer p{font-size:11px;letter-spacing:.18em;color:var(--ink-faint)}
   .gal a:nth-child(1),.gal a:nth-child(6){grid-column:span 2}
   .contact{padding:92px 0}
 }
-@media (max-width:780px){.reels{grid-template-columns:1fr;max-width:400px;margin:0 auto;gap:22px}}
 @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 </style>
 </head>
@@ -198,19 +198,6 @@ footer p{font-size:11px;letter-spacing:.18em;color:var(--ink-faint)}
 <script>
 /* ============ 讀 content.json 並渲染 ============ */
 var esc = function(s){ return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); };
-
-/* 把一般的分享連結自動轉成可嵌入播放的網址。
-   支援 TikTok 影片、YouTube（含 Shorts）、Instagram（Reels／貼文）。 */
-function toEmbed(u){
-  u = String(u||''); var m;
-  if((m = u.match(/tiktok\.com\/(?:@[^/?#]+\/)?(?:video|photo)\/(\d+)/)))
-    return 'https://www.tiktok.com/embed/v2/' + m[1];
-  if((m = u.match(/(?:youtube\.com\/(?:shorts\/|embed\/|live\/|watch\?(?:.*&)?v=)|youtu\.be\/)([A-Za-z0-9_-]{6,})/)))
-    return 'https://www.youtube.com/embed/' + m[1];
-  if((m = u.match(/instagram\.com\/(reel|reels|p|tv)\/([A-Za-z0-9_-]+)/)))
-    return 'https://www.instagram.com/' + (m[1]==='reels'?'reel':m[1]) + '/' + m[2] + '/embed/';
-  return '';
-}
 
 function render(D){
   var s=D.site||{}, h=D.hero||{}, a=D.about||{}, r=D.reel||{}, k=D.skills||{},
@@ -253,26 +240,21 @@ function render(D){
    + '<div class="stats rv">'+(a.stats||[]).map(function(t){return '<div class="stat"><div class="n">'+esc(t.num)+'</div><div class="l">'+esc(t.label)+'</div></div>';}).join('')+'</div>'
    + '</div></section>';
 
-  /* 代表作品（影片可直接播放） */
+  /* 代表作品（整列都是連結，點了開新視窗） */
   if((r.items||[]).length){
-    H+='<section id="reel" class="alt"><div class="wrap wrap-reels">'
+    H+='<section id="reel" class="alt"><div class="wrap">'
      + '<div class="sec-head rv"><span class="sec-num">'+esc(r.num)+'</span><h2>'+esc(r.heading)+'</h2></div>'
      + (r.intro?'<p class="reel-intro rv">'+esc(r.intro)+'</p>':'')
      + '<div class="reels">'+r.items.map(function(v){
-         var em = v.embed || toEmbed(v.url);
-         return '<article class="reel rv">'
-          + '<div class="reel-frame">'
-          +   (em
-               ? '<iframe src="'+esc(em)+'" loading="lazy" title="'+esc(v.title)+'" scrolling="no" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; fullscreen"></iframe>'
-               : '<div class="noembed">連結無法嵌入播放</div>')
-          + '</div>'
-          + '<div class="reel-info">'
+         return '<a class="reel rv" href="'+esc(v.url)+'" target="_blank" rel="noopener">'
+          + '<div class="reel-views">'+esc(v.views)+'<i>'+esc(v.views_label||'觀看')+'</i></div>'
+          + '<div class="reel-main">'
           +   '<div class="reel-plat">'+esc(v.platform)+'</div>'
           +   '<h3>'+esc(v.title)+'</h3>'
-          +   (v.views?'<div class="reel-views">'+esc(v.views)+'<i>'+esc(v.views_label||'觀看')+'</i></div>':'')
           +   (v.note?'<p class="reel-note">'+esc(v.note)+'</p>':'')
-          +   (v.url?'<a class="reel-go" href="'+esc(v.url)+'" target="_blank" rel="noopener">'+esc(v.link_text||'開新視窗觀看 →')+'</a>':'')
-          + '</div></article>';
+          + '</div>'
+          + '<div class="reel-go">'+esc(v.link_text||'開啟 →')+'</div>'
+          + '</a>';
        }).join('')+'</div>'
      + '</div></section>';
   }
