@@ -1,0 +1,140 @@
+media:
+  - name: img
+    input: img
+    output: /img
+    extensions: [jpg, jpeg, png, webp, gif, svg]
+
+content:
+  - name: resume
+    label: 履歷內容
+    path: content.json
+    type: file
+    format: json
+    fields:
+      - name: site
+        label: 網站基本設定
+        type: object
+        fields:
+          - { name: title, label: 瀏覽器標題, type: string }
+          - { name: description, label: 搜尋引擎說明, type: text }
+          - { name: brand_a, label: 左上角文字（前）, type: string }
+          - { name: brand_b, label: 左上角文字（後・橘色）, type: string }
+          - { name: accent, label: 主色（色碼）, type: string }
+      - name: hero
+        label: 一、首屏
+        type: object
+        fields:
+          - { name: eyebrow, label: 最上方小字, type: string }
+          - { name: name_zh, label: 中文名（大字）, type: string }
+          - { name: name_en, label: 英文名, type: string }
+          - { name: tagline, label: 一句話定位, type: string }
+          - { name: tagline_sub, label: 定位下方那行數字, type: text }
+          - { name: bg_image, label: 背景照片, type: image, options: { media: img } }
+      - name: about
+        label: 二、個人簡介
+        type: object
+        fields:
+          - { name: num, label: 區塊編號, type: string }
+          - { name: heading, label: 標題, type: string }
+          - { name: paragraphs, label: 段落, type: string, list: true }
+          - name: tags
+            label: 關鍵字標籤
+            type: object
+            list: true
+            fields:
+              - { name: text, label: 文字, type: string }
+              - { name: highlight, label: 用橘色強調, type: boolean }
+          - { name: photo, label: 右側照片, type: image, options: { media: img } }
+          - { name: photo_caption, label: 照片說明, type: string }
+          - name: stats
+            label: 數據格
+            type: object
+            list: true
+            fields:
+              - { name: num, label: 數字, type: string }
+              - { name: label, label: 說明, type: text }
+      - name: skills
+        label: 三、專業技能
+        type: object
+        fields:
+          - { name: num, label: 區塊編號, type: string }
+          - { name: heading, label: 標題, type: string }
+          - name: items
+            label: 技能項目
+            type: object
+            list: true
+            fields:
+              - { name: name, label: 中文名稱, type: string }
+              - { name: en, label: 英文小標, type: string }
+              - { name: desc, label: 說明, type: text }
+      - name: experience
+        label: 四、工作經歷
+        type: object
+        fields:
+          - { name: num, label: 區塊編號, type: string }
+          - { name: heading, label: 標題, type: string }
+          - name: jobs
+            label: 每一份工作
+            type: object
+            list: true
+            fields:
+              - { name: when, label: 期間, type: string }
+              - { name: role, label: 職稱, type: string }
+              - { name: company, label: 公司／產業, type: string }
+              - name: blocks
+                label: 內容段落
+                type: object
+                list: true
+                fields:
+                  - { name: title, label: 小標, type: string }
+                  - { name: text, label: 內文, type: text }
+              - { name: credits_title, label: 清單標題, type: string }
+              - name: credits
+                label: 清單（作品／成績）
+                type: object
+                list: true
+                fields:
+                  - { name: tag, label: 左側標記, type: string }
+                  - { name: text, label: 內容, type: string }
+                  - { name: note, label: 右側備註, type: string }
+              - { name: result, label: 底部成果框, type: string }
+      - name: work
+        label: 五、作品／頻道
+        type: object
+        fields:
+          - { name: num, label: 區塊編號, type: string }
+          - { name: heading, label: 標題, type: string }
+          - name: cards
+            label: 頻道卡片
+            type: object
+            list: true
+            fields:
+              - { name: title, label: 頻道名稱, type: string }
+              - { name: meta, label: 說明, type: text }
+              - { name: growth, label: 成長數字, type: string }
+              - { name: best, label: 最佳成績, type: text }
+              - { name: image, label: 封面圖／logo, type: image, options: { media: img } }
+              - { name: image_is_logo, label: 這張是 logo, type: boolean }
+              - { name: link, label: 連結網址, type: string }
+              - { name: link_text, label: 連結文字, type: string }
+      - name: onset
+        label: 六、拍攝現場
+        type: object
+        fields:
+          - { name: num, label: 區塊編號, type: string }
+          - { name: heading, label: 標題, type: string }
+          - { name: photos, label: 照片, type: image, list: true, options: { media: img } }
+      - name: contact
+        label: 七、聯絡
+        type: object
+        fields:
+          - { name: headline, label: 標語, type: text }
+          - { name: email, label: Email, type: string }
+          - name: links
+            label: 外部連結
+            type: object
+            list: true
+            fields:
+              - { name: text, label: 文字, type: string }
+              - { name: url, label: 網址, type: string }
+          - { name: footer, label: 頁尾文字, type: string }
