@@ -24,6 +24,7 @@ content:
         label: 一、首屏
         type: object
         fields:
+          - { name: portrait, label: 圓形頭像（留空則不顯示）, type: image, options: { media: img } }
           - { name: eyebrow, label: 最上方小字, type: string }
           - { name: name_zh, label: 中文名（大字）, type: string }
           - { name: name_en, label: 英文名, type: string }
