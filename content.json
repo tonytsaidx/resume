@@ -11,44 +11,88 @@
     "name_zh": "蔡定軒",
     "name_en": "Tsai Ding Hsuan",
     "tagline": "經營品牌形象",
-    "tagline_sub": "兩個品牌帳號　13k → 30k　・　3k → 12k　・　單支最高 53 萬觀看",
-    "bg_image": "img/S__26763282_0.jpg"
+    "tagline_sub": "兩個品牌帳號　13k → 30k　・　3k → 12k　・　單支最高 106 萬觀看",
+    "bg_image": "/img/S__26763282_0.jpg"
   },
   "about": {
     "num": "01 — ABOUT",
-    "heading": "從燈光現場，走到內容企劃",
+    "heading": "從拍攝現場，走到內容企劃",
     "paragraphs": [
       "黎明技術學院影視傳播系畢業。從影視現場的燈光助理做起，待過金穗獎入圍作品與商業 MV 的劇組，後來轉做品牌內容企劃。",
       "目前是鑑星閣拍賣行的攝影企劃，負責這個頻道的短影音內容。從選題、資料查證、腳本、拍攝，到社群文案與成效追蹤，一條線自己完成，同時負責頻道的數據週報與內容策略。",
-      "經營過的頻道兩個都做出成長：元禾汽車從 13k 做到 30k，鑑星閣從 3k 做到 12k。單支最高成績是一支 53 萬觀看的 YouTube Shorts。",
-      "因為做的是拍賣題材，我對資料查證特別要求：天價與紀錄類的說法一律回溯到拍賣行官方新聞稿、鑑定機構報告或法規原文，區分公開落槌價與私下交易，不用二手轉述的數字。"
+      "經營過的頻道兩個都做出成長：元禾汽車從 13k 做到 30k，鑑星閣從 3k 做到 12k。單支最高成績是一支 53 萬觀看的 YouTube Shorts。"
     ],
     "tags": [
-      { "text": "內容企劃", "highlight": true },
-      { "text": "影像拍攝", "highlight": true },
-      { "text": "腳本撰寫", "highlight": false },
-      { "text": "燈光設計", "highlight": false },
-      { "text": "社群經營", "highlight": false },
-      { "text": "數據分析", "highlight": false }
+      {
+        "text": "內容企劃",
+        "highlight": true
+      },
+      {
+        "text": "影像拍攝",
+        "highlight": true
+      },
+      {
+        "text": "腳本撰寫",
+        "highlight": false
+      },
+      {
+        "text": "燈光設計",
+        "highlight": false
+      },
+      {
+        "text": "社群經營",
+        "highlight": false
+      },
+      {
+        "text": "數據分析",
+        "highlight": false
+      }
     ],
-    "photo": "img/S__26763287_0.jpg",
+    "photo": "/img/S__26763287_0.jpg",
     "photo_caption": "ON SET ／ 拍攝現場",
     "stats": [
-      { "num": "53萬", "label": "單支最高觀看\nYouTube Shorts" },
-      { "num": "24.4萬", "label": "單支最高觀看\nTikTok" },
-      { "num": "90+", "label": "累積腳本\n支數" },
-      { "num": "87.5%", "label": "觸及來自\n非追蹤者" }
+      {
+        "num": "106萬",
+        "label": "單支最高觀看\nYouTube Shorts"
+      },
+      {
+        "num": "24.4萬",
+        "label": "單支最高觀看\nTikTok"
+      },
+      {
+        "num": "300+",
+        "label": "累積腳本\n支數"
+      },
+      {
+        "num": "87.5%",
+        "label": "觸及來自\n非追蹤者"
+      }
     ]
   },
   "skills": {
     "num": "02 — SKILLS",
     "heading": "專業技能",
     "items": [
-      { "name": "內容企劃", "en": "PLANNING", "desc": "短影音選題開發、腳本撰寫（60–120 秒）、故事結構設計、系列企劃" },
-      { "name": "拍攝執行", "en": "PRODUCTION", "desc": "分鏡規劃、現場拍攝、燈光設計、畫面素材與版權分寸控管" },
-      { "name": "社群經營", "en": "SOCIAL", "desc": "多平台文案（IG／YouTube Shorts／TikTok／Threads／Facebook）、留言互動設計、自動私訊漏斗規劃" },
-      { "name": "數據分析", "en": "ANALYTICS", "desc": "IG 專業主控板、YouTube Studio、每週數據週報、受眾輪廓分析、依內容目的設定對應指標" },
-      { "name": "資料查證", "en": "FACT-CHECK", "desc": "回溯一手來源、公開拍賣紀錄查核、來源強度分級" }
+      {
+        "name": "內容企劃",
+        "en": "PLANNING",
+        "desc": "短影音選題開發、腳本撰寫（60–120 秒）、故事結構設計、系列企劃"
+      },
+      {
+        "name": "拍攝執行",
+        "en": "PRODUCTION",
+        "desc": "分鏡規劃、現場拍攝、燈光設計、畫面素材與版權分寸控管"
+      },
+      {
+        "name": "社群經營",
+        "en": "SOCIAL",
+        "desc": "多平台文案（IG／YouTube Shorts／TikTok／Threads／Facebook）、留言互動設計、自動私訊漏斗規劃"
+      },
+      {
+        "name": "數據分析",
+        "en": "ANALYTICS",
+        "desc": "IG 專業主控板、YouTube Studio、每週數據週報、受眾輪廓分析、依內容目的設定對應指標"
+      }
     ]
   },
   "experience": {
@@ -60,11 +104,19 @@
         "role": "攝影企劃",
         "company": "鑑星閣有限公司　／　拍賣行",
         "blocks": [
-          { "title": "內容企劃與腳本", "text": "負責拍賣行短影音的選題與腳本，單支 60–120 秒，累積腳本庫 90 支以上。建立可重複使用的敘事結構，以及三條內容線各自對應不同成效指標：天價故事線導流委託、委託展示線直接帶案、角色情感線做觸及與養粉。" },
-          { "title": "資料查證", "text": "拍賣題材的數字不能錯。建立紀錄類說法的三步查核流程，並區分公開拍賣落槌價、私下交易與二手平台成交，分別用不同措辭處理。曾據此攔下已被刷新的舊紀錄與搜尋引擎生成的錯誤價格。" },
-          { "title": "社群與數據", "text": "每支影片配套產出全平台文案與互動題設計。每週產出數據週報作為週會決策依據，內容涵蓋雙週比較、平台對比、受眾輪廓與優化建議。" }
+          {
+            "title": "內容企劃與腳本",
+            "text": "負責拍賣行短影音的選題與腳本，單支 60–120 秒，累積腳本庫 90 支以上。建立可重複使用的敘事結構，以及三條內容線各自對應不同成效指標：天價故事線導流委託、委託展示線直接帶案、角色情感線做觸及與養粉。"
+          },
+          {
+            "title": "資料查證",
+            "text": "拍賣題材的數字不能錯。建立紀錄類說法的三步查核流程，並區分公開拍賣落槌價、私下交易與二手平台成交，分別用不同措辭處理。曾據此攔下已被刷新的舊紀錄與搜尋引擎生成的錯誤價格。"
+          },
+          {
+            "title": "社群與數據",
+            "text": "每支影片配套產出全平台文案與互動題設計。每週產出數據週報作為週會決策依據，內容涵蓋雙週比較、平台對比、受眾輪廓與優化建議。"
+          }
         ],
-        "credits": [],
         "result": "Instagram 3k → 12k　／　近 30 天觸及 20.3 萬人"
       },
       {
@@ -72,13 +124,27 @@
         "role": "短影音企劃",
         "company": "元禾汽車國際有限公司　／　汽車零配件零售",
         "blocks": [
-          { "title": "企劃與編導", "text": "負責短影音的腳本、拍攝與編導，同時經營兩個帳號：汽車品牌主帳號，以及以同事日常為主軸的「元禾這群人の日常」。" }
+          {
+            "title": "企劃與編導",
+            "text": "負責短影音的腳本、拍攝與編導，同時經營兩個帳號：汽車品牌主帳號，以及以同事日常為主軸的「元禾這群人の日常」。"
+          }
         ],
         "credits_title": "代表成績",
         "credits": [
-          { "tag": "53萬", "text": "YouTube Shorts 觀看", "note": "" },
-          { "tag": "24.4萬", "text": "TikTok 觀看", "note": "3,306 讚・120 收藏" },
-          { "tag": "23.2萬", "text": "TikTok 觀看（元禾這群人の日常）", "note": "5,160 讚・211 收藏" }
+          {
+            "tag": "53萬",
+            "text": "YouTube Shorts 觀看"
+          },
+          {
+            "tag": "24.4萬",
+            "text": "TikTok 觀看",
+            "note": "3,306 讚・120 收藏"
+          },
+          {
+            "tag": "23.2萬",
+            "text": "TikTok 觀看（元禾這群人の日常）",
+            "note": "5,160 讚・211 收藏"
+          }
         ],
         "result": "頻道 13k → 30k（一年內）"
       },
@@ -87,19 +153,49 @@
         "role": "燈光助理／燈光師",
         "company": "貞寶企業有限公司　／　多媒體傳播",
         "blocks": [
-          { "title": "影視現場燈光執行", "text": "參與短片、MV 與商業廣告案的現場燈光執行。" }
+          {
+            "title": "影視現場燈光執行",
+            "text": "參與短片、MV 與商業廣告案的現場燈光執行。"
+          }
         ],
         "credits_title": "代表作品",
         "credits": [
-          { "tag": "2023", "text": "金穗獎入圍《防己》", "note": "燈光助理" },
-          { "tag": "2023", "text": "校園鑫馬獎初審第一《瞞好的》", "note": "燈光助理" },
-          { "tag": "2023", "text": "吳克群〈最最幸運的事情〉", "note": "燈光師" },
-          { "tag": "2023", "text": "Dance 30 三十高校街舞祭 活動形象片", "note": "燈光師" },
-          { "tag": "2023", "text": "JHT 形象概念影片（廣告商案）", "note": "燈光助理" },
-          { "tag": "2024", "text": "艾蜜莉 AMILI〈負極先生〉", "note": "燈光助理" },
-          { "tag": "2024", "text": "艾蜜莉 AMILI〈英雄很多時候也沒辦法〉", "note": "燈光助理" }
-        ],
-        "result": ""
+          {
+            "tag": "2023",
+            "text": "金穗獎入圍《防己》",
+            "note": "燈光助理"
+          },
+          {
+            "tag": "2023",
+            "text": "校園鑫馬獎初審第一《瞞好的》",
+            "note": "燈光助理"
+          },
+          {
+            "tag": "2023",
+            "text": "吳克群〈最最幸運的事情〉",
+            "note": "燈光師"
+          },
+          {
+            "tag": "2023",
+            "text": "Dance 30 三十高校街舞祭 活動形象片",
+            "note": "燈光師"
+          },
+          {
+            "tag": "2023",
+            "text": "JHT 形象概念影片（廣告商案）",
+            "note": "燈光助理"
+          },
+          {
+            "tag": "2024",
+            "text": "艾蜜莉 AMILI〈負極先生〉",
+            "note": "燈光助理"
+          },
+          {
+            "tag": "2024",
+            "text": "艾蜜莉 AMILI〈英雄很多時候也沒辦法〉",
+            "note": "燈光助理"
+          }
+        ]
       }
     ]
   },
@@ -112,7 +208,7 @@
         "meta": "拍賣題材短影音\nInstagram・TikTok・YouTube",
         "growth": "3k → 12k",
         "best": "近 30 天瀏覽 56.9 萬次\n單支最高 9.6 萬瀏覽・6,987 互動",
-        "image": "img/logo-jxg.png",
+        "image": "/img/logo-jxg.png",
         "image_is_logo": true,
         "link": "https://www.instagram.com/jncin1996",
         "link_text": "前往頻道 →"
@@ -122,7 +218,7 @@
         "meta": "汽車品牌短影音\nInstagram・TikTok・YouTube",
         "growth": "13k → 30k",
         "best": "單支最高 53 萬觀看（Shorts）\nTikTok 最高 24.4 萬觀看",
-        "image": "img/logo-yuanhe.png",
+        "image": "/img/logo-yuanhe.png",
         "image_is_logo": true,
         "link": "https://www.tiktok.com/@yuanhecar0901",
         "link_text": "前往頻道 →"
@@ -132,7 +228,7 @@
         "meta": "以同事日常為主軸的\n品牌人物帳號",
         "growth": "23.2萬",
         "best": "單支最高觀看\n5,160 讚・211 收藏",
-        "image": "img/S__26763283_0.jpg",
+        "image": "/img/S__26763283_0.jpg",
         "image_is_logo": false,
         "link": "https://www.tiktok.com/@yuanhecarlife",
         "link_text": "前往頻道 →"
@@ -143,21 +239,30 @@
     "num": "05 — ON SET",
     "heading": "拍攝現場",
     "photos": [
-      "img/S__26763282_0.jpg",
-      "img/S__26763284_0.jpg",
-      "img/S__26763286_0.jpg",
-      "img/S__26763288_0.jpg",
-      "img/S__26763287_0.jpg",
-      "img/S__26763285_0.jpg"
+      "/img/S__26763282_0.jpg",
+      "/img/S__26763284_0.jpg",
+      "/img/S__26763286_0.jpg",
+      "/img/S__26763288_0.jpg",
+      "/img/S__26763287_0.jpg",
+      "/img/S__26763285_0.jpg"
     ]
   },
   "contact": {
-    "headline": "如果你想找人把品牌形象做起來，\n我們可以聊聊。",
+    "headline": "影像企劃 / 內容行銷",
     "email": "tonytsaidx@gmail.com",
     "links": [
-      { "text": "鑑星閣 IG", "url": "https://www.instagram.com/jncin1996" },
-      { "text": "元禾汽車 TikTok", "url": "https://www.tiktok.com/@yuanhecar0901" },
-      { "text": "元禾這群人の日常", "url": "https://www.tiktok.com/@yuanhecarlife" }
+      {
+        "text": "鑑星閣 IG",
+        "url": "https://www.instagram.com/jncin1996"
+      },
+      {
+        "text": "元禾汽車 TikTok",
+        "url": "https://www.tiktok.com/@yuanhecar0901"
+      },
+      {
+        "text": "元禾這群人の日常",
+        "url": "https://www.tiktok.com/@yuanhecarlife"
+      }
     ],
     "footer": "© 2026 蔡定軒 TSAI DING HSUAN"
   }
