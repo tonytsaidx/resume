@@ -72,14 +72,13 @@ content:
             type: object
             list: true
             fields:
-              - { name: url,         label: 影片連結（直接貼分享網址：TikTok／YouTube／Instagram 都可以）, type: string }
+              - { name: url,         label: 影片連結（直接貼分享網址，點文字會開新視窗）, type: string }
               - { name: platform,    label: 平台與頻道（如 TIKTOK ・ 元禾汽車）, type: string }
               - { name: title,       label: 影片標題, type: string }
               - { name: views,       label: 觀看數（如 24.4萬）, type: string }
               - { name: views_label, label: 觀看數後面的小字（預設「觀看」）, type: string }
               - { name: note,        label: 這支我做了什麼, type: text }
-              - { name: link_text,   label: 連結文字（如 在 TikTok 上觀看 →）, type: string }
-              - { name: embed,       label: 進階：自訂嵌入網址（一般留空，系統會自動從上面的連結轉換）, type: string }
+              - { name: link_text,   label: 右側連結文字（如 在 TikTok 上觀看 →）, type: string }
 
       - name: skills
         label: 四、專業技能
