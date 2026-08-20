@@ -7,7 +7,7 @@
     "accent": "#ff6f4d"
   },
   "hero": {
-    "portrait": "/img/S__26763283_0.jpg",
+    "portrait": "",
     "eyebrow": "Content Planner ・ Filmmaker",
     "name_zh": "蔡定軒",
     "name_en": "Tsai Ding Hsuan",
@@ -39,8 +39,69 @@
       { "num": "87.5%", "label": "觸及來自\n非追蹤者" }
     ]
   },
+  "reel": {
+    "num": "02 — SHOWREEL",
+    "heading": "代表作品",
+    "intro": "以下六支都是我負責企劃、腳本與拍攝的短影音，可以直接在這一頁播放。",
+    "items": [
+      {
+        "platform": "TIKTOK ・ 元禾這群人の日常",
+        "title": "街訪企劃｜豆豆先生的車",
+        "views": "23.2萬",
+        "views_label": "觀看",
+        "note": "用街訪形式帶出車款話題，靠真實反應撐節奏，不靠旁白解說。這支帶動整個人物帳號的觸及。",
+        "url": "https://www.tiktok.com/@yuanhecarlife/video/7500061507061812487",
+        "link_text": "在 TikTok 上觀看 →"
+      },
+      {
+        "platform": "TIKTOK ・ 元禾汽車",
+        "title": "小時候的 GTR，長大變成……",
+        "views": "24.4萬",
+        "views_label": "觀看",
+        "note": "把車輛介紹拍成電影感短片：以情緒開場，車體特寫當節拍，規格資訊往後放。",
+        "url": "https://www.tiktok.com/@yuanhecar0901/video/7493450718628629781",
+        "link_text": "在 TikTok 上觀看 →"
+      },
+      {
+        "platform": "YOUTUBE SHORTS ・ 元禾汽車",
+        "title": "藝人合作短影音｜本週入庫車款",
+        "views": "106萬",
+        "views_label": "觀看",
+        "note": "與藝人合作的品牌企劃，是目前觸及最高的一支。合作聲量本身就是流量來源，我負責的是把它接回品牌的車款內容。",
+        "url": "https://youtube.com/shorts/pdNV7aAprWM",
+        "link_text": "在 YouTube 上觀看 →"
+      },
+      {
+        "platform": "YOUTUBE SHORTS ・ 元禾汽車",
+        "title": "到底還能多低？",
+        "views": "53萬",
+        "views_label": "觀看",
+        "note": "沒有藝人、沒有合作資源，純靠企劃與剪輯節奏跑出來的成績。",
+        "url": "https://youtube.com/shorts/FiGahHf4JQc",
+        "link_text": "在 YouTube 上觀看 →"
+      },
+      {
+        "platform": "INSTAGRAM REELS ・ 鑑星閣",
+        "title": "角色情感線｜被嫌棄是流浪貓的喵喵",
+        "views": "20萬",
+        "views_label": "觀看",
+        "note": "從資料裡挑出一條完整的情感弧線來說，不做知識整理。這支是鑑星閣角色情感線的風格標準。",
+        "url": "https://www.instagram.com/reel/DYPDwGZPU-v/",
+        "link_text": "在 Instagram 上觀看 →"
+      },
+      {
+        "platform": "INSTAGRAM REELS ・ 鑑星閣",
+        "title": "火影忍者 GK 開箱",
+        "views": "近 20萬",
+        "views_label": "觀看",
+        "note": "公仔開箱的節奏設計：前八秒點題、二十秒內讓主角出場、規格放中段、情感壓在結尾。",
+        "url": "https://www.instagram.com/reel/DY6rDuxvOAG/",
+        "link_text": "在 Instagram 上觀看 →"
+      }
+    ]
+  },
   "skills": {
-    "num": "02 — SKILLS",
+    "num": "03 — SKILLS",
     "heading": "專業技能",
     "items": [
       { "name": "內容企劃", "en": "PLANNING", "desc": "短影音選題開發、腳本撰寫（60–120 秒）、故事結構設計、系列企劃" },
@@ -50,7 +111,7 @@
     ]
   },
   "experience": {
-    "num": "03 — EXPERIENCE",
+    "num": "04 — EXPERIENCE",
     "heading": "工作經歷",
     "jobs": [
       {
@@ -98,7 +159,7 @@
     ]
   },
   "work": {
-    "num": "04 — WORK",
+    "num": "05 — CHANNELS",
     "heading": "經營中與經營過的頻道",
     "cards": [
       {
@@ -134,7 +195,7 @@
     ]
   },
   "onset": {
-    "num": "05 — ON SET",
+    "num": "06 — ON SET",
     "heading": "拍攝現場",
     "photos": [
       "/img/S__26763282_0.jpg",
